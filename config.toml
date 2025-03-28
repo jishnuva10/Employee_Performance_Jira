@@ -1,0 +1,68 @@
+# config.toml
+[theme]
+# Primary accent color for interactive elements
+primaryColor = "#4B8BBE"
+
+# Background color for the main content area
+backgroundColor = "#F0F2F6"
+
+# Background color for sidebar and most interactive widgets
+secondaryBackgroundColor = "#E1E5EE"
+
+# Color used for almost all text
+textColor = "#262730"
+
+# Font family (can be "sans serif", "serif", "monospace")
+font = "sans serif"
+
+[server]
+# Enable XSRF protection for added security
+enableXsrfProtection = true
+
+# Enable CORS for iframes
+enableCORS = false
+
+# Port where the server will listen
+port = 8501
+
+[browser]
+# Set to false to disable automatic browser opening on run
+serverAddress = "localhost"
+
+[runner]
+# Allows you to run Python files without the .py extension
+magicEnabled = true
+
+[client]
+# Show the hamburger menu in the top right corner
+showSidebarNavigation = true
+
+[mapbox]
+# Your Mapbox token for mapping visualizations
+token = ""
+
+[ui]
+# Set to false to hide the "Made with Streamlit" footer
+hideFooter = false
+
+[logger]
+# Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+level = "INFO"
+
+[deprecation]
+# Show deprecation warnings
+showfileUploaderEncoding = true
+
+[s3]
+# AWS credentials for S3 access
+accessKeyId = ""
+secretAccessKey = ""
+bucket = ""
+
+[email]
+# Email configuration for notifications
+smtpHost = ""
+smtpPort = 587
+smtpUsername = ""
+smtpPassword = ""
+fromEmail = ""
